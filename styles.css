@@ -1,0 +1,33 @@
+
+#main-doc {
+    height: 100%;
+    width: 100%;
+}
+#navbar {
+    position: fixed;
+    width: 300px;
+    height: 1000px;
+    background-color: #305f72;
+    font-family: 'JetBrains Mono', monospace;
+    color: #f18c8e;
+    padding-left: 10px;
+}
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li {
+    list-style: none;
+    border-top: #F0B7A4;
+    position: relative;
+    width: 100%;
+}
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #f1d185;
+    text-decoration: none;
+    cursor: pointer;
+}
