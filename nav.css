@@ -1,0 +1,37 @@
+/* nav bar */
+
+#navbar {
+  position: fixed;
+  height: 100%;
+  min-width: 19rem;
+  background-color: var(--navbg-bodytext-color);
+  font-family: "JetBrains Mono", monospace;
+  color: var(--bodybg-navtitle-color);
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  padding-top: 1rem;
+}
+#navbar li {
+  list-style: none;
+  border-bottom: 2px solid var(--borders-shawdows-color);
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+li:first-child {
+  border-top: 2px solid var(--borders-shawdows-color);
+}
+li a:hover {
+  background-color: var(--codebg-hover-color);
+}
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: var(--headerbg-navtext-color);
+  text-decoration: none;
+  cursor: pointer;
+}

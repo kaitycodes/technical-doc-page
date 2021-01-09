@@ -1,0 +1,28 @@
+/* main content */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem 1rem 21rem;
+}
+.h1 {
+  background-color: var(--headerbg-navtext-color);
+  width: 15rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+.code-example {
+  background: var(--codebg-hover-color);
+  max-width: fit-content;
+  min-width: 24rem;
+  margin: 1rem 5rem 1rem 5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0px 2px 5px var(--borders-shawdows-color);
+}
+pre {
+  color: var(--codetext-color);
+  font-size: larger;
+  min-width: 24rem;
+}

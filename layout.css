@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --bodybg-navtitle-color: #f18c8e;
+  --headerbg-navtext-color: #f1d185;
+  --navbg-bodytext-color: #305f72;
+  --codebg-hover-color: #568ea6;
+  --codetext-color: #ffffff;
+  --borders-shawdows-color: #f0b7a4;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--navbg-bodytext-color);
+  background-color: var(--bodybg-navtitle-color);
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    position: absolute;
+    top: 0;
+    max-height: 260px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
