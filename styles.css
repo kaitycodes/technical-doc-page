@@ -1,20 +1,12 @@
-/* color pallete
-
-pink-orange: #f18c8e
-light orange: #f0b7a4
-light yellow: #f1d1b5
-teal: #568ea6
-dark teal: #305f72 */
 * {
   box-sizing: border-box;
   margin: 0;
 }
 body {
   font-family: "JetBrains Mono", monospace;
-  color: #305f72;
+  color: var(--navbar-mainfont-color);
   background-color: #f18c8e;
 }
-
 #navbar {
   position: fixed;
   height: 100%;
