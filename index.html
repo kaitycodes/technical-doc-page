@@ -39,9 +39,10 @@
             <p>To begin writing in JavaScript, open your IDE and write the code shown below in a .js file. Create a script for the .js file in your HTML document and open the .html file in your browser. You will see an alert pop up with the greeting
                 "Hello World":
                 <pre class="code-example">
-                    <code>function greetMe(yourName) { 
+                    <code>
+                        function greetMe(yourName) { 
                         alert("Hello" + yourName); 
-                    }
+                        }
                         greetMe("World");</code>
                 </pre>
             </p>
@@ -55,6 +56,20 @@
         </section>
         <section class="main-section" id="variable_scope">
             <header class="h1">Variable Scope</header>
+            <scope>Scope refers to the extent that a defined variable is visible to other source code. An example of a variable with <strong>global</strong> scope is one that is defined outside of a function and can be used by any function without passing it to the function as a parameter:
+                <pre class="code-example">
+                    
+                        <code>const name = "kaitycodes";</code>
+                </pre>
+            </p>
+            <p><strong>Local</strong> scope, on the other hand, refers to a variable that is defined within a function and can only be used within the function that defines it:
+            <pre class="code-example">
+                    
+                        <code>function makeFunc() {
+                        const myName = "kaitycodes";
+                        }</code>
+            </pre>
+            </p>
         </section>
         <section class="main-section" id="functions">
             <header class="h1">Functions</header>
