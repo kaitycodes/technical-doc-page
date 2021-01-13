@@ -12,12 +12,12 @@
 }
 
 body {
-  font-family: "JetBrains Mono", monospace;
+  font-family: 'JetBrains Mono', monospace;
   color: var(--navbg-bodytext-color);
   background-color: var(--bodybg-navtitle-color);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 479px) {
   #navbar {
     position: absolute;
     top: 0;
