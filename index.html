@@ -25,16 +25,16 @@
         <section class="main-section" id="introduction">
             <header class="h1">Introduction</header>
             <article>
-                <p>JavaScript is a lightweight, object-oriented, interpreted programming language that utilizes just-in-time compilation with first-class functions. Best known as the scripting language used for web page behavior, it also has non-browser environment uses as well. 
+                <p>JavaScript is a lightweight, object-oriented, interpreted programming language that utilizes just-in-time compilation with first-class functions. Best known as the scripting language used for web page behavior, it also has non-browser environment uses as well. Exploring this technical documentation page will help you understand what <em>exactly</em> makes JavaScript the unique programming language that it is. Enjoy!
                 </p>
             </article>
         </section>
         <section class="main-section" id="javascript_vs_java">
             <header class="h1">JavaScript vs. Java</header>
             <p>Contrary to popular belief, JavaScript is not "interpreted Java". Java is typically utilized in server-side development, whereas Javascript predominently handles the development of client-side scripting for functions that increase a web page's interactivity. With that said, the creation of of Node.js has allowed developers to increasingly use JavaScript to run server-side scripts for various tools and applications. Some other key differences between JavaScript and Java include:</p>
-        </br> 
+        </br>
             <ul>
-                 <li>JavaScript code runs in the browser only, whereas Java creates applications that run in a virtual machine or browser</li>
+                 <li>While both Java and JavaScript can run on browsers and servers alike, JavaScript is known to run on browsers in order to enhance the user experience, whereas Java is known to be a web and application server workhorse</li>
                  <li>Java is designed to allow developers to write code once and deploy it to any operating system without having to make changes. While this is not a failproof process, JavaScript is more sensitive to differences in execution environments, such as browser compatibility issues, which requires more individualized coding</li>
                  <li>Java is a language that is compiled prior to being run, meaning it will be compiled to bytecode or machine code before being executed. Thus any structural issues with the code are recognized rather quickly, and once the code is running, developers can attach to the virtual machine and debug in real-time. JavaScript uses just-in-time compilation which means code translation occurs just before runtime. Bugs are then found at runtime and debugging capabilities are highly dependent on the execution environment which will vary widely among developers.</li>
              </ul>
@@ -44,13 +44,13 @@
             <header class="h1">Hello World</header>
             <p>To begin writing in JavaScript, open your IDE and write the code shown below in a .js file. Create a script for the .js file in your HTML document and open the .html file in your browser. You will see an alert pop up with the greeting
                 "Hello World":
-                <pre class="code-example">
-                    <code>
-                        function greetMe(yourName) { 
-                        alert("Hello" + yourName); 
-                        }
-                        greetMe("World");</code>
-                </pre>
+            <pre class="code-example">
+            <code>
+            function greetMe(yourName) { 
+            alert("Hello" + yourName); 
+            }
+            greetMe("World");</code>
+            </pre>
             </p>
         </section>
         <section class="main-section" id="variables">
@@ -63,17 +63,17 @@
         <section class="main-section" id="variable_scope">
             <header class="h1">Variable Scope</header>
             <scope>Scope refers to the extent that a defined variable is visible to other source code. An example of a variable with <strong>global</strong> scope is one that is defined outside of a function and can be used by any function without passing it to the function as a parameter:
-                <pre class="code-example">
-                    
-                        <code>const name = "kaitycodes";</code>
-                </pre>
-            </p>
-            <p><strong>Local</strong> scope, on the other hand, refers to a variable that is defined within a function and can only be used within the function that defines it:
             <pre class="code-example">
                     
-                        <code>function makeFunc() {
-                        const myName = "kaitycodes";
-                        }</code>
+            <code>const name = "kaitycodes";</code>
+            </pre>
+            </p>
+            <p><strong>Local</strong> scope, on the other hand, refers to a variable that is defined within a function and can only be used within the function that defines it:
+<pre class="code-example">
+                    
+            <code>function makeFunc() {
+            const myName = "kaitycodes";
+            }</code>
             </pre>
             </p>
         </section>
