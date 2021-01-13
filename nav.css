@@ -5,7 +5,7 @@
   height: 100%;
   min-width: 19rem;
   background-color: var(--navbg-bodytext-color);
-  font-family: "JetBrains Mono", monospace;
+  font-family: 'JetBrains Mono', monospace;
   color: var(--bodybg-navtitle-color);
   text-align: center;
   padding: 2rem 0 0 0;
@@ -22,7 +22,7 @@
   width: 100%;
   text-align: center;
 }
-li:first-child {
+nav li:first-child {
   border-top: 2px solid var(--borders-shawdows-color);
 }
 li a:hover {
