@@ -12,6 +12,9 @@
   text-align: center;
   margin: 1rem 0 1rem 0;
 }
+ul {
+  list-style-type: square;
+}
 .code-example {
   background: var(--codebg-hover-color);
   max-width: fit-content;
@@ -24,5 +27,5 @@
 pre {
   color: var(--codetext-color);
   font-size: larger;
-  min-width: 24rem;
+  max-width: 40rem;
 }
