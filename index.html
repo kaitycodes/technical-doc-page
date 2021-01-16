@@ -13,7 +13,6 @@
             <li><a class="nav-link" href="#javascript_vs_java">JavaScript vs Java</a></li>
             <li><a class="nav-link" href="#hello_world">Hello World</a></li> 
             <li><a class="nav-link" href="#variables">Variables</a></li>
-            <li><a class="nav-link" href="#declaring_variables">Declaring Variables</a></li>
             <li><a class="nav-link" href="#variable_scope">Variable Scope</a></li>
              <li><a class="nav-link" href="#functions">Functions</a></li> 
              <li><a class="nav-link" href="declaring_functions">Declaring Functions</a></li> 
@@ -42,8 +41,7 @@
         </section>
         <section class="main-section" id="hello_world">
             <header class="h1">Hello World</header>
-            <p>To begin writing in JavaScript, open your IDE and write the code shown below in a .js file. Create a script for the .js file in your HTML document and open the .html file in your browser. You will see an alert pop up with the greeting
-                "Hello World":
+            <p>To begin writing in JavaScript, open your IDE and write the code shown below in a <strong class="main-text-code">.js</strong> file. Create a script for the .js file in your <strong class="main-text-code">.html</strong> file and open the .html file in your browser. You will see an alert pop up with the greeting "Hello World":
             <pre class="code-example">
             <code>
             function greetMe(yourName) { 
@@ -55,24 +53,31 @@
         </section>
         <section class="main-section" id="variables">
             <header class="h1">Variables</header>
-            <p>A variable is a symbolic name assigned to a value and values can take many different forms. These include numbers (intergers and real numbers), boolean (true/false) values, strings of text within double or single quotation marks, null ("no value") values, and undefined values. Variables are declared with keywords var, let or const. In the code example below, variable <strong>x</strong> is assigned to the string value <strong> "hello world</strong> via the <strong>let</strong> gitkeyword:</p>
+            <p>A variable is a symbolic name assigned to a value and values can take many different forms. These include:</p>
+        </br>    
+            <ul>
+                    <li>numbers (intergers and real numbers)</li>
+                    <li>boolean (true/false) values</li>
+                    <li>strings of text within double or single quotation marks</li>
+                    <li>null ("no value") values</li>
+                    <li>undefined values</li>
+                </ul>
+            </br>
+                <p>Variables are declared with keywords var, let or const. In the code example below, variable <strong class="main-text-code">x</strong> is assigned to the string value <strong class="main-text-code">"hello world"</strong> via the <strong class="main-text-code">let</strong> keyword:</p>
                 <pre class="code-example">
                     <code>
                     let x = "hello world";</code>
                     </pre>
         </section>
-        <section class="main-section" id="declaring_variables">
-            <header class="h1">Declaring Variables</header>
-        </section>
         <section class="main-section" id="variable_scope">
             <header class="h1">Variable Scope</header>
-            <scope>Scope refers to the extent that a defined variable is visible to other source code. An example of a variable with <strong>global</strong> scope is one that is defined outside of a function and can be used by any function without passing it to the function as a parameter:
+            <scope>Scope refers to the extent that a defined variable is visible to other source code. An example of a variable with <em>global</em> scope is one that is defined outside of a function and can be used by any function without passing it to the function as a parameter:
             <pre class="code-example">
                     
             <code>const name = "kaitycodes";</code>
             </pre>
             </p>
-            <p><strong>Local</strong> scope, on the other hand, refers to a variable that is defined within a function and can only be used within the function that defines it:
+            <p><em>Local</em> scope, on the other hand, refers to a variable that is defined within a function and can only be used within the function that defines it:
 <pre class="code-example">
                     
             <code>function makeFunc() {
