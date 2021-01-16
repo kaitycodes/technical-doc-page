@@ -29,3 +29,9 @@ pre {
   font-size: larger;
   max-width: 40rem;
 }
+.main-text-code {
+  color: var(--codetext-color);
+}
+.terms-color {
+  color: var(--headerbg-navtext-color);
+}
