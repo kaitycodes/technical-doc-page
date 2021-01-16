@@ -54,11 +54,38 @@
         </section>
         <section class="main-section" id="lexical-structure">
             <header class="h1">Lexical Structure</header>
-            <p>It is important to understand the basic rules of how to write programs in a language in order to help the program run effectively and efficiently without unnecessary bugs and frustration. These rules are terms the lexical structure of Javascript and they include the following:</p>
+            <p>It is important to understand the basic rules of how to write programs in a language in order to help the program run effectively and efficiently without creating unnecessary bugs that can be difficult to locate. These rules are terms the lexical structure of Javascript and they include the following:</p>
         </br>
             <ul>
             <li>JavaScript is a case-sensitive language, which means paying attention to when and how you capitalize words. For example, the keyword <em>function</em> must be typed as "function", not "Function" or "FUNCTION". When two words are combined in the naming of variables and functions, it is best practice to write in <em>camelCase</em> to easily differentiate words</li>
-        <li>Comments provide context to code and are styled in a way that JavaScript knows to ignore the text as it executes the code. A single-line comment is delimited by "//" at the beginning of the line, whereas a multi-line comment's text falls between "/* */"</li>
+            <li>Comments provide context to code and are styled in such a way that JavaScript knows to ignore the text as code is executed. A single-line comment is delimited by "//" at the beginning of the line, whereas a multi-line comment's text falls between a pair of "/*" characters:  </li>
+            <pre class="code-example">
+                <code>
+                // this is a comment
+
+                /* this is also
+                a comment */</code>
+                </pre>
+            
+            <li>Identifiers are used to name variables, functions, constants, properties, classes and to label certain loops. Identifiers must begin with a letter, underscore (_) or dollar sign ($)</li>
+            <li>Keywords are words that cannot be used as identifiers because they already have special meaning and can only be used in certain contexts in JavaScript. A full list of available keywords is outside the scope of this document, however, examples include <em>const, function, for, get, return </em>and <em>while</em>.</li>        
+            <li>The Unicode character set (composed of letters, digits and ideographs) is used in JavaScript to create identifiers, strings and to write comments about the code itself. When certain computer software or hardware cannot display or process a full set of Unicode characters, four-digit Unicode escape sequences can be used. These are written with the characters "\u" followed by four hexicdemical digits or by one to six hexidemical digits enclosed within curly braces. For example, the "é" in "touché" can be written in the following two ways:</li>
+            <pre class="code-example">
+                <code>
+                touch\u00e9
+                touch\u{E9}</code>
+                </pre>
+            <li>Semicolons are at times considered optional in JavaScript, but they can be necessary for separating statements. For example, in the instance of a single line of code that has more than one statement, a semi-colon is needed to provide separation between them:
+                <pre class="code-example">
+                    <code>
+                    a = 6; b = 8;</code>
+                    </pre>
+            Generally speaking, JavaScript will interpret a line break as a semicolon when it cannot parse the code as a continuation of the first statement. In situations where a new statement begins with parentheses () or square brackets [] JavaScript can get confused and assign it to the first statement. As such, some programmers will proactively use a semicolon at the beginning of the second line to explictly separate the statements:</li>
+                <pre class="code-example">
+                    <code>
+                    let x = y + f
+                    ;(a+b).toString()</code>
+                    </pre>        
         </ul>
         </section>
             <section class="main-section" id="variables">
