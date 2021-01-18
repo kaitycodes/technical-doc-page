@@ -2,139 +2,195 @@
 
 <head>
     <title>Technical Documentation Page</title>
-    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
+
+<body>
     <nav id="navbar">
-            <header>JavaScript Documentation</header>
-            <ul>
-                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <header>JavaScript Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
             <li><a class="nav-link" href="#javascript_vs_java">JavaScript vs Java</a></li>
-            <li><a class="nav-link" href="#hello_world">Hello World</a></li> 
+            <li><a class="nav-link" href="#hello_world">Hello World</a></li>
             <li><a class="nav-link" href="#lexical-structure">Lexical Structure</a></li>
             <li><a class="nav-link" href="#variables">Variables</a></li>
             <li><a class="nav-link" href="#variable_scope">Variable Scope</a></li>
-             <li><a class="nav-link" href="#functions">Functions</a></li>
-             <li><a ckass="nav-link" href="#closures">Closures</a></li> 
+            <li><a class="nav-link" href="#functions">Functions</a></li>
+            <li><a ckass="nav-link" href="#closures">Closures</a></li>
             <li><a class="nav-link" href="#references">References</a></li>
-            </ul>
+        </ul>
     </nav>
     <main id="main-doc">
-    <div class="container">
-        <section class="main-section" id="introduction">
-            <header class="h1">Introduction</header>
-            <article>
-                <p>JavaScript is a lightweight, object-oriented, interpreted programming language that utilizes just-in-time compilation with first-class functions. Best known as the scripting language used for web page behavior, it also has non-browser environment uses as well. Exploring this technical documentation page will help you understand what <em>exactly</em> makes JavaScript the unique programming language that it is. Enjoy!
+        <div class="container">
+            <section class="main-section" id="introduction">
+                <header class="h1">Introduction</header>
+                <article>
+                    <p>JavaScript is a lightweight, object-oriented, interpreted programming language that utilizes
+                        just-in-time compilation with first-class functions. Best known as the scripting language used
+                        for web page behavior, it also has non-browser environment uses as well. Exploring this
+                        technical documentation page will help you understand what <em>exactly</em> makes JavaScript the
+                        unique programming language that it is. Enjoy!
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="javascript_vs_java">
+                <header class="h1">JavaScript vs. Java</header>
+                <p>Contrary to popular belief, JavaScript is not "interpreted Java". Java is typically utilized in
+                    server-side development, whereas Javascript predominently handles the development of client-side
+                    scripting for functions that increase a web page's interactivity. With that said, the creation of of
+                    Node.js has allowed developers to increasingly use JavaScript to run server-side scripts for various
+                    tools and applications. Some other key differences between JavaScript and Java include:</p>
+                </br>
+                <ul>
+                    <li>While both Java and JavaScript can run on browsers and servers alike, JavaScript is known to run
+                        on browsers in order to enhance the user experience, whereas Java is known to be a web and
+                        application server workhorse</li>
+                    <li>Java is designed to allow developers to write code once and deploy it to any operating system
+                        without having to make changes. While this is not a failproof process, JavaScript is more
+                        sensitive to differences in execution environments, such as browser compatibility issues, which
+                        requires more individualized coding</li>
+                    <li>Java is a language that is compiled prior to being run, meaning it will be compiled to bytecode
+                        or machine code before being executed. Thus any structural issues with the code are recognized
+                        rather quickly, and once the code is running, developers can attach to the virtual machine and
+                        debug in real-time. JavaScript uses just-in-time compilation which means code translation occurs
+                        just before runtime. Bugs are then found at runtime and debugging capabilities are highly
+                        dependent on the execution environment which will vary widely among developers.</li>
+                </ul>
                 </p>
-            </article>
-        </section>
-        <section class="main-section" id="javascript_vs_java">
-            <header class="h1">JavaScript vs. Java</header>
-            <p>Contrary to popular belief, JavaScript is not "interpreted Java". Java is typically utilized in server-side development, whereas Javascript predominently handles the development of client-side scripting for functions that increase a web page's interactivity. With that said, the creation of of Node.js has allowed developers to increasingly use JavaScript to run server-side scripts for various tools and applications. Some other key differences between JavaScript and Java include:</p>
-        </br>
-            <ul>
-                 <li>While both Java and JavaScript can run on browsers and servers alike, JavaScript is known to run on browsers in order to enhance the user experience, whereas Java is known to be a web and application server workhorse</li>
-                 <li>Java is designed to allow developers to write code once and deploy it to any operating system without having to make changes. While this is not a failproof process, JavaScript is more sensitive to differences in execution environments, such as browser compatibility issues, which requires more individualized coding</li>
-                 <li>Java is a language that is compiled prior to being run, meaning it will be compiled to bytecode or machine code before being executed. Thus any structural issues with the code are recognized rather quickly, and once the code is running, developers can attach to the virtual machine and debug in real-time. JavaScript uses just-in-time compilation which means code translation occurs just before runtime. Bugs are then found at runtime and debugging capabilities are highly dependent on the execution environment which will vary widely among developers.</li>
-             </ul>
+            </section>
+            <section class="main-section" id="hello_world">
+                <header class="h1">Hello World</header>
+                <p>To begin writing in JavaScript, open your IDE and write the code shown below in a <em>.js</em> file.
+                    Create a script for the .js file in your <em>.html</em> file and open the .html file in your
+                    browser. You will see an alert pop up with the greeting "Hello World":
+                <pre class="code-example">
+        <code>
+        function greetMe(yourName) { 
+        alert("Hello" + yourName); 
+        }
+        greetMe("World");</code>
+        </pre>
                 </p>
-        </section>
-        <section class="main-section" id="hello_world">
-            <header class="h1">Hello World</header>
-            <p>To begin writing in JavaScript, open your IDE and write the code shown below in a <em>.js</em> file. Create a script for the .js file in your <em>.html</em> file and open the .html file in your browser. You will see an alert pop up with the greeting "Hello World":
-            <pre class="code-example">
+            </section>
+            <section class="main-section" id="lexical-structure">
+                <header class="h1">Lexical Structure</header>
+                <p>It is important to understand the basic rules of how to write programs in a language in order to help
+                    the program run effectively and efficiently without creating unnecessary bugs that can be difficult
+                    to locate. These rules are terms the lexical structure of Javascript and they include the following:
+                </p>
+                </br>
+                <ul>
+                    <li>JavaScript is a case-sensitive language, which means paying attention to when and how you
+                        capitalize words. For example, the keyword <em>function</em> must be typed as "function", not
+                        "Function" or "FUNCTION". When two words are combined in the naming of variables and functions,
+                        it is best practice to write in <em>camelCase</em> to easily differentiate words</li>
+                    <li>Comments provide context to code and are styled in such a way that JavaScript knows to ignore
+                        the text as code is executed. A single-line comment is delimited by "//" at the beginning of the
+                        line, whereas a multi-line comment's text falls between a pair of "/*" characters: </li>
+                    <pre class="code-example">
             <code>
-            function greetMe(yourName) { 
-            alert("Hello" + yourName); 
-            }
-            greetMe("World");</code>
-            </pre>
-            </p>
-        </section>
-        <section class="main-section" id="lexical-structure">
-            <header class="h1">Lexical Structure</header>
-            <p>It is important to understand the basic rules of how to write programs in a language in order to help the program run effectively and efficiently without creating unnecessary bugs that can be difficult to locate. These rules are terms the lexical structure of Javascript and they include the following:</p>
-        </br>
-            <ul>
-            <li>JavaScript is a case-sensitive language, which means paying attention to when and how you capitalize words. For example, the keyword <em>function</em> must be typed as "function", not "Function" or "FUNCTION". When two words are combined in the naming of variables and functions, it is best practice to write in <em>camelCase</em> to easily differentiate words</li>
-            <li>Comments provide context to code and are styled in such a way that JavaScript knows to ignore the text as code is executed. A single-line comment is delimited by "//" at the beginning of the line, whereas a multi-line comment's text falls between a pair of "/*" characters:  </li>
-            <pre class="code-example">
-                <code>
-                // this is a comment
+            // this is a comment
 
-                /* this is also
-                a comment */</code>
-                </pre>
-            
-            <li>Identifiers are used to name variables, functions, constants, properties, classes and to label certain loops. Identifiers must begin with a letter, underscore (_) or dollar sign ($)</li>
-            <li>Keywords are words that cannot be used as identifiers because they already have special meaning and can only be used in certain contexts in JavaScript. A full list of available keywords is outside the scope of this document, however, examples include <em>const, function, for, get, return </em>and <em>while</em>.</li>        
-            <li>The Unicode character set (composed of letters, digits and ideographs) is used in JavaScript to create identifiers, strings and to write comments about the code itself. When certain computer software or hardware cannot display or process a full set of Unicode characters, four-digit Unicode escape sequences can be used. These are written with the characters "\u" followed by four hexicdemical digits or by one to six hexidemical digits enclosed within curly braces. For example, the "é" in "touché" can be written in the following two ways:</li>
-            <pre class="code-example">
+            /* this is also
+            a comment */</code>
+            </pre>
+
+                    <li>Identifiers are used to name variables, functions, constants, properties, classes and to label
+                        certain loops. Identifiers must begin with a letter, underscore (_) or dollar sign ($)</li>
+                    <li>Keywords are words that cannot be used as identifiers because they already have special meaning
+                        and can only be used in certain contexts in JavaScript. A full list of available keywords is
+                        outside the scope of this document, however, examples include <em>const, function, for, get,
+                            return </em>and <em>while</em>.</li>
+                    <li>The Unicode character set (composed of letters, digits and ideographs) is used in JavaScript to
+                        create identifiers, strings and to write comments about the code itself. When certain computer
+                        software or hardware cannot display or process a full set of Unicode characters, four-digit
+                        Unicode escape sequences can be used. These are written with the characters "\u" followed by
+                        four hexicdemical digits or by one to six hexidemical digits enclosed within curly braces. For
+                        example, the "é" in "touché" can be written in the following two ways:</li>
+                    <pre class="code-example">
+            <code>
+            touch\u00e9
+            touch\u{E9}</code>
+            </pre>
+                    <li>Semicolons are at times considered optional in JavaScript, but they can be necessary for
+                        separating statements. For example, in the instance of a single line of code that has more than
+                        one statement, a semi-colon is needed to provide separation between them:
+                        <pre class="code-example">
                 <code>
-                touch\u00e9
-                touch\u{E9}</code>
+                a = 6; b = 8;</code>
                 </pre>
-            <li>Semicolons are at times considered optional in JavaScript, but they can be necessary for separating statements. For example, in the instance of a single line of code that has more than one statement, a semi-colon is needed to provide separation between them:
-                <pre class="code-example">
-                    <code>
-                    a = 6; b = 8;</code>
-                    </pre>
-            Generally speaking, JavaScript will interpret a line break as a semicolon when it cannot parse the code as a continuation of the first statement. In situations where a new statement begins with parentheses () or square brackets [] JavaScript can get confused and assign it to the first statement. As such, some programmers will proactively use a semicolon at the beginning of the second line to explictly separate the statements:</li>
-                <pre class="code-example">
-                    <code>
-                    let x = y + f
-                    ;(a+b).toString()</code>
-                    </pre>        
-        </ul>
-        </section>
+                        Generally speaking, JavaScript will interpret a line break as a semicolon when it cannot parse
+                        the code as a continuation of the first statement. In situations where a new statement begins
+                        with parentheses () or square brackets [] JavaScript can get confused and assign it to the first
+                        statement. As such, some programmers will proactively use a semicolon at the beginning of the
+                        second line to explictly separate the statements:
+                    </li>
+                    <pre class="code-example">
+                <code>
+                let x = y + f
+                ;(a+b).toString()</code>
+                </pre>
+                </ul>
+            </section>
             <section class="main-section" id="variables">
-            <header class="h1">Variables</header>
-            <p>A variable is a symbolic name assigned to a value and values can take many different forms. These include:</p>
-        </br>    
-            <ul>
+                <header class="h1">Variables</header>
+                <p>A variable is a symbolic name assigned to a value and values can take many different forms. These
+                    include:</p>
+                </br>
+                <ul>
                     <li>numbers (intergers and real numbers)</li>
                     <li>boolean (true/false) values</li>
                     <li>strings of text within double or single quotation marks</li>
                     <li>null ("no value") values</li>
                     <li>undefined values</li>
                 </ul>
-            </br>
-                <p>Variables are declared with keywords var, let or const. In the code example below, variable <em>x</em> is assigned to the string value <em>"hello world"</em> via the <em>let</em> keyword:</p>
+                </br>
+                <p>Variables are declared with keywords var, let or const. In the code example below, variable
+                    <em>x</em> is assigned to the string value <em>"hello world"</em> via the <em>let</em> keyword:</p>
                 <pre class="code-example">
-                    <code>
-                    let x = "hello world";</code>
-                    </pre>
-        </section>
-        <section class="main-section" id="variable_scope">
-            <header class="h1">Variable Scope</header>
-            <scope>Scope refers to the extent that a defined variable is visible to other source code. An example of a variable with <em>global</em> scope is one that is defined outside of a function and can be used by any function without passing it to the function as a parameter:
-            <pre class="code-example">
-                    
-            <code>const name = "kaitycodes";</code>
-            </pre>
-            </p>
-            <p><em>Local</em> scope, on the other hand, refers to a variable that is defined within a function and can only be used within the function that defines it:
-<pre class="code-example">
-                    
-            <code>function makeFunc() {
-            const myName = "kaitycodes";
-            }</code>
-            </pre>
-            </p>
-        </section>
-        <section class="main-section" id="functions">
-            <header class="h1">Functions</header>
-            <p>Functions are named and parameterized blocks of code that can are defined once and then invoked as many times as desired. Function statements are enclosed in curly braces, as seen above in the code example for Variable Scope. It is important to remember that the code inside of a function is only executed when it is invoked or called:</p>
-        </section>
-        <section class="main-section" id="closures">
-            <header class="h1">Closures</header>  
-        </section>
-        <section class="main-section" id="references">
-            <header class="h1">References</header>
+                <code>
+                let x = "hello world";</code>
+                </pre>
+            </section>
+            <section class="main-section" id="variable_scope">
+                <header class="h1">Variable Scope</header>
+                <scope>Scope refers to the extent that a defined variable is visible to other source code. An example of
+                    a variable with <em>global</em> scope is one that is defined outside of a function and can be used
+                    by any function without passing it to the function as a parameter:
+                    <pre class="code-example">
+
+        <code>const name = "kaitycodes";</code>
+        </pre>
+                    </p>
+                    <p><em>Local</em> scope, on the other hand, refers to a variable that is defined within a function
+                        and can only be used within the function that defines it:
+                    <pre class="code-example">
+
+        <code>function makeFunc() {
+        const myName = "kaitycodes";
+        }</code>
+        </pre>
+                    </p>
+            </section>
+            <section class="main-section" id="functions">
+                <header class="h1">Functions</header>
+                <p>Functions are named and parameterized blocks of code that can are defined once and then invoked as
+                    many times as desired. Function statements are enclosed in curly braces, as seen above in the code
+                    example for Variable Scope. It is important to remember that the code inside of a function is only
+                    executed when it is invoked or called:</p>
+            </section>
+            <section class="main-section" id="closures">
+                <header class="h1">Closures</header>
+            </section>
+            <section class="main-section" id="references">
+                <header class="h1">References</header>
             </section>
         </div>
 
-</main>
+    </main>
+
+</body>
 
 </html>

@@ -1,8 +1,8 @@
 /* nav bar */
 
 #navbar {
-  position: fixed;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
   min-width: 19rem;
   background-color: var(--navbg-bodytext-color);
   font-family: 'JetBrains Mono', monospace;

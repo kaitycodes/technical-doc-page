@@ -1,5 +1,5 @@
 /* master style sheet */
 
-@import url(layout.css/);
-@import url(nav.css/);
-@import url(main-content.css/);
+@import url(layout.css);
+@import url(nav.css);
+@import url(main-content.css);
